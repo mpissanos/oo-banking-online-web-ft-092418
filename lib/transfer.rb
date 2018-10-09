@@ -9,6 +9,6 @@ class Transfer
   end
   
   def valid?()
-    @sender.balance > 0 && @receiver.status == ""
+    @sender.balance > 0 && @receiver.status == "open"
   end
 end
