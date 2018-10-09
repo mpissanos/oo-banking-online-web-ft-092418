@@ -9,6 +9,6 @@ class Transfer
   end
   
   def valid?
-    balance > 0 && @status == "open"
+    sender.balance > 0 
   end
 end
