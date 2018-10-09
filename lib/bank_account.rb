@@ -8,6 +8,6 @@ class BankAccount
     end
     
     def deposit(amaount)
-      @balance + amount
+      @balance + amaount
     end
 end
