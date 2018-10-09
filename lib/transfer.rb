@@ -17,7 +17,7 @@ class Transfer
       @status = "rejected"
       return "Transaction rejected. Please check your account balance."
     elsif status == "complete" 
-      puts "already executed"
+      return "Transaction already executed"
     else
       sender.withdraw(amount)
       receiver.deposit(amount)
