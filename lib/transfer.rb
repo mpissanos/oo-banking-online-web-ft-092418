@@ -16,7 +16,8 @@ class Transfer
     if status == "complete"
       puts "already executed"
     elsif sender.valid? != true
-      puts 
+      puts "Transaction rejected. Please check your account balance."
+    else
       sender.withdraw(amount)
       receiver.deposit(amount)
       @status = "complete"
