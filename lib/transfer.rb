@@ -9,6 +9,6 @@ class Transfer
   end
   
   def valid?
-    @sender.balance > @amount && @receiver.status == "open"
+    @sender.bankaccount.valid? && @receiver.bankaccount.valid?
   end
 end
