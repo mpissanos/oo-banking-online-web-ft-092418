@@ -13,6 +13,7 @@ class Transfer
   end
   
   def execute_transaction
-    
+    sender.withdraw
+    receiver.
   end 
 end
