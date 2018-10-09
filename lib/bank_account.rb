@@ -20,6 +20,6 @@ class BankAccount
     end
     
     def close_account
-      self.class.delete
+      self = 0
     end
 end
