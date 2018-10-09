@@ -16,7 +16,7 @@ class BankAccount
     end
     
     def valid?
-      if @balance != 0
+      @balance != 0
    
     end
 end
