@@ -16,7 +16,7 @@ class Transfer
     if status == "complete"
       puts "already executed"
     elsif 
-      sender.valid? && receiver.valid?
+      sender.valid? 
       sender.withdraw(amount)
       receiver.deposit(amount)
       @status = "complete"
